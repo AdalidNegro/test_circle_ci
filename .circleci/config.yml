@@ -20,8 +20,6 @@ jobs:
       - run: echo "A more familiar hi"
       - attach_workspace:
         at: my_workspace
-      - run: |
-        echo [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]
 workflows:
   version: 2
   one_and_two:
